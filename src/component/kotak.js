@@ -11,17 +11,10 @@ function Kotak() {
     formData.append('key', key);
 
     try {
-      const response = await fetch("http://localhost:8000/v1/base64/encode", {
-        method: "POST",
+      const response = await fetch('http://localhost:8000/v1/base64/encode', {
+        method: 'POST',
         body: formData,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
 
       const data = await response.json();
       console.log(data);
@@ -37,6 +30,7 @@ function Kotak() {
     <div className="container">
       <div className='cover'>
         <input
+          id="fileInput"
           type="file"
           name='file'
           className='encrypt-file'
@@ -44,6 +38,7 @@ function Kotak() {
           onChange={(e) => setFile(e.target.files[0])}
         />
         <input
+          id="encryptionKey"
           type="password"
           name='key'
           className='encrypt-key'
@@ -54,6 +49,7 @@ function Kotak() {
           Encrypt
         </button>
       </div>
+      <div id="result"></div>
     </div>
   );
 }
