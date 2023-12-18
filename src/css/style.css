@@ -1,3 +1,20 @@
+.greet{
+  text-align: left;
+}
+.log-clue{
+  text-align: left;
+}
+
+.tag-username tag-password{
+  text-align: left;
+  align-items: left;
+}
+
+
+
+
+
+
 .Logo{
   height: 120px;
   width: 120px;
@@ -52,8 +69,21 @@ height: 50vh; /* Mengisi seluruh tinggi layar */
   background-color: rgb(229, 226, 226);
   height: 3em;
   width: 75%;
-  text-align: left;
+  text-align: center;
   margin-top: 220px;
+  border-radius: 1em;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.username-log{
+  border: none;
+  background-color: rgb(229, 226, 226);
+  height: 3em;
+  width: 75%;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
   border-radius: 1em;
   padding-left: 10px;
 }
@@ -125,4 +155,5 @@ height: 50vh; /* Mengisi seluruh tinggi layar */
 }
 .list-key{
   margin-top: 80px;
+  color: #00A9FF;
 }

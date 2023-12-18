@@ -5,7 +5,7 @@ function KotakD() {
   return (
     <div className="container">
       <div className='cover'>
-        <input className='encrypt-file' placeholder='Choose File'/>
+        <input type="file" className='encrypt-file' placeholder='Choose File'/>
         <input className='encrypt-key' placeholder='Enter Key'/>
         <button className="encrypt-btn" onClick="">Decrypt</button>
       </div>
